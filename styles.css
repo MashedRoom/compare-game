@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background-color: #2162B1;
+    background-color: #001933;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -15,32 +15,28 @@ body{
     height: 100%;
 }
 
-.question{
+.high-score, .level{
+    font-size: 25px;
+}
+
+.numbers{
     width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.choices{
-    display: flex;
-    justify-content: space-around;
-    width: 20%;
+.num-left, .num-right{
+    font-size: 70px;
+    font-weight: 700;
+    padding: 20px 30px;
+    border-radius: 25px;
+    background-color: #003366;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
 }
 
-.box-choice{
-    padding: 8px 16px;
-    font-size: 40px;
-    border: solid #C7E0FF;
-    border-radius: 25px;
-}
-
-.answer{
-    width: 25px;
-    height: 15px;
-    padding: 20px;
-    border: solid #C7E0FF;
-    border-radius: 25px;
+.num-left:hover, .num-right:hover{
+    box-shadow: 0px 25px 20px -20px rgba(136, 165, 191, 0.48);
 }
 
 .gone{
@@ -61,16 +57,16 @@ body{
 
 @keyframes blink-green {
     0%, 100% {
-        background-color: #2162B1; /* original color */
+        background-color: #001933; /* original color */
     }
     50% {
-        background-color: #0096c7;
+        background-color: #003366;
     }
 }
 
 @keyframes blink-red {
     0%, 100% {
-        background-color: #2162B1; /* original color */
+        background-color: #001933; /* original color */
     }
     50% {
         background-color: #9F4A54;
